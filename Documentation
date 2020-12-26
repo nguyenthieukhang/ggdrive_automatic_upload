@@ -1,0 +1,13 @@
+This is a Python script which automatically upload your files to Google Drive.
+
+Python3 and neccessary modules like pydrive, time, os, smtplib and ssl must be pre-installed. 'client_secrets.json' and 'ggdrive_automatic_upload.py' must be put in the same directory.
+
+After all setup is done, run the program using the terminal: python3 ggdrive_automatic_upload.py
+
+Follow the instruction in the program. It will ask you your Google Account and email, please use the account that you want to use to store your files. You must also provide the absolute directory of the folder holding all the files you want to upload.
+
+You can also specify whether you want to upload files with a particular extension by inputing the extension ('.png', '.txt', etc. if you only want the files with this extension) or an upper-case 'NO' (if you have no specification).
+
+If there is a folder in your directory, it will not be uploaded. Instead, a trash file name .DS_Store will be.
+
+After finishing, the program will send you an email about all the files uploaded.
